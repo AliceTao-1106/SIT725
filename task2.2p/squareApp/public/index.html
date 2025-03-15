@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Square Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <h2>Square a Number</h2>
+    <form action="/square" method="GET">
+        <label for="num">Enter a number:</label>
+        <input type="text" id="num" name="num" required>
+        <button type="submit">Calculate Square</button>
+    </form>
+
+    <h2>Add Two Numbers</h2>
+    <form action="/add" method="GET">
+        <label for="num1">Enter first number:</label>
+        <input type="text" id="num1" name="num1" required>
+
+        <label for="num2">Enter second number:</label>
+        <input type="text" id="num2" name="num2" required>
+
+        <button type="submit">Calculate Sum</button>
+    </form>
+
+    <h2>Subtract Two Numbers</h2>
+    <form action="/subtract" method="GET">
+        <label for="subnum1">Enter first number:</label>
+        <input type="text" id="subnum1" name="num1" required>
+
+        <label for="subnum2">Enter second number:</label>
+        <input type="text" id="subnum2" name="num2" required>
+
+        <button type="submit">Calculate Difference</button>
+    </form>
+
+</body>
+
+</html>
