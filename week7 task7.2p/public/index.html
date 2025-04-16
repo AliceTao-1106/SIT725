@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The cat bookstore</title>
+    <meta name="description" content="The cat bookstore">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="The cat bookstore">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A warm bookstore with a cute cat">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom Style Sheet-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper navbar-size">
+            <a href="#" class="brand-logo"><img class="user-image-size" src="images/bookstore.png" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a target="_blank" href="https://www.linkedin.com/in/navit-choudhary5133b9104/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body">
+        <div class="container">       
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="heading">Welcome to the Cat bookstore</h1>
+                    <p class="flow-text">Discover books, stories, and cozy moments – all under one purring roof.</p>
+                </div>
+                <div class="col s12">
+                    <img class="materialboxed materialboxed-image" src="images/bookstore-inside.jpg">
+                    <br>
+                </div>
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn modal-trigger click-me-button" id="clickMeButton"
+                        data-target="modal1">
+                        <i class="material-icons left">local_library</i>Join Our Community</a>
+                </div>
+            </div>
+            <hr>
+            <div id="random-book" class="book-spotlight center-align">
+                <h5 class="book-title-header">Book Spotlight</h5>
+                <img id="book-img" src="" alt="Book Cover" />
+                <p id="book-title"></p>
+                <p id="book-desc" class="flow-text"></p>
+            </div>     
+            <hr>
+            <div class="row" id="card-section">
+                <div class="col s4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/book1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">The Tale of Peter Rabbit<i
+                                    class="material-icons right">more_vert</i></span>
+                            <p><a href="#">Read more</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">The Tale of Peter Rabbit<i
+                                    class="material-icons right">close</i></span>
+                            <p class="card-text">​The mischievous adventures of Peter Rabbit in Mr. McGregor's garden.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="row modal-content">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "task3.2p",
+  "version": "1.0.0",
+  "description": "task3.2p",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliceTao-1106/SIT725.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "HTML",
+    "JS",
+    "CSS"
+  ],
+  "author": "Alice Tao",
+  "license": "MIT",
+  "homepage": "https://github.com/AliceTao-1106/SIT725.git",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
+    "socket.io": "^4.8.1"
+  }
+}
